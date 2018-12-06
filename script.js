@@ -84,6 +84,7 @@ function Bil(regnr,m,f,åm,bes)
    this.årsmodell=åm
    this.besiktad=bes
 }
+//Uppgift 8 igen
 //Uppgift 8
 var getAge= (dateOfBirth, dateToCalculate = new Date()) => {
    const dob = new Date(dateOfBirth).getTime();

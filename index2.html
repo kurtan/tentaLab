@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{background-color: white;}
+    label{position:relative;background-image:url(grå.png);background-repeat:no-repeat;margin: auto;margin-top:100px;display:block;width:200px;height:5px;background-color:blue;}
+    div{position:absolute;left:400px;top:400px;margin:auto;width:200px;height:200px;border-radius:50%;background:gray;}
+    </style>
+</head>
+<body>
+        <svg height="210" width="500">
+                <polygon points="200,10 400,210 200,210" style="fill:green;" />
+              </svg>
+
+    <div>
+    <label> </label>
+</div>
+    <script>
+        var x=0
+    setInterval(function(){
+     document.querySelector("label").style.transform=`rotate(${x+=6}deg)`
+    },1000)
+    
+    </script>
+</body>
+</html>
